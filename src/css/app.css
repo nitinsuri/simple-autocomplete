@@ -1,0 +1,85 @@
+:root {
+  --base-font-size: 10px;
+  --base-text-size: 1.6rem;
+  --font-family: "Bai Jamjuree", sans-serif;
+  --heading1: 2.4rem;
+  --heading2: 2rem;
+  --heading3: 1.8rem;
+  --heading4: 1.4rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-family);
+  font-size: var(--base-font-size);
+}
+body {
+  font-size: var(--base-text-size);
+}
+
+h1,
+.heading-1 {
+  font-size: var(--heading1);
+}
+h2,
+.heading-2 {
+  font-size: var(--heading2);
+}
+h3,
+.heading-3 {
+  font-size: var(--heading3);
+}
+h4,
+.heading-4 {
+  font-size: var(--heading4);
+}
+
+input,
+select {
+  border: 2px solid #c7c7c7;
+  border-radius: 8px;
+  font-family: var(--font-family);
+  font-size: var(--heading2);
+  padding: 1.6rem;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+#city-lookup {
+  width: 50%;
+}
+
+#suggestion-list {
+  list-style-type: none;
+  margin: 1rem 0;
+  width: 50%;
+  padding-left: 0;
+}
+
+#suggestion-list li a {
+  border-bottom: 1px solid #cccccc;
+  color: black;
+  display: block;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+#suggestion-list li a:hover,
+#suggestion-list li a:focus {
+  background-color: #efefef;
+}
+
+#suggestion-list li:nth-child(even) {
+  background-color: #f3f3f3;
+}
+
+#suggestion-list li.no-match-found {
+  border-bottom-color: #ff0000;
+  color: #ff0000;
+}
